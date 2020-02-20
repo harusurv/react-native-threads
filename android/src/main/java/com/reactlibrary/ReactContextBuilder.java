@@ -3,7 +3,6 @@ package com.reactlibrary;
 import android.content.Context;
 import android.net.Uri;
 
-import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
 import com.facebook.react.NativeModuleRegistryBuilder;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.CatalystInstance;
@@ -57,17 +56,12 @@ public class ReactContextBuilder {
         return this;
     }
 
-    private JavaScriptExecutorFactory getJSExecutorFactory() {
-        try {
-            String appName = Uri.encode(parentContext.getPackageName());
-            String deviceName = Uri.encode(getFriendlyDeviceName());
-            // If JSC is included, use it as normal
-            SoLoader.loadLibrary("jscexecutor");
-            return new JSCExecutorFactory(appName, deviceName);
-        } catch (UnsatisfiedLinkError jscE) {
-            // Otherwise use Hermes
-            return new HermesExecutorFactory();
-        }
+    private JavaScriptExecutorFactory getJSExecutorFactory() throws UnsatisfiedLinkError {
+        String appName = Uri.encode(parentContext.getPackageName());
+        String deviceName = Uri.encode(getFriendlyDeviceName());
+        // If JSC is included, use it as normal
+        SoLoader.loadLibrary("jscexecutor");
+        return new JSCExecutorFactory(appName, deviceName);
     }
 
     public ReactApplicationContext build() throws Exception {
