@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.rnthreads;
 
 import android.content.Context;
 import android.net.Uri;

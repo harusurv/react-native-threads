@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.rnthreads;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.modules.core.DeviceEventManagerModule;

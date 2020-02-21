@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.rnthreads;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.ReactNativeHost;
