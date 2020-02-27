@@ -21,10 +21,10 @@
   "author": "Travis Nuttall",
   "license": "MIT",
   "files": [
-    "android/",
-    "ios/",
-    "js/",
-    "index.js"
+    "/android/!(build)",
+    "/ios/!(build)",
+    "/js/",
+    "/index.js"
   ],
   "peerDependencies": {
     "react-native": ">=0.50.0"
