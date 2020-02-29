@@ -22,7 +22,9 @@
   "license": "MIT",
   "files": [
     "/android/!(build)",
-    "/ios/!(build)",
+    "/ios/!(build|RNThread.xcodeproj)",
+    "/ios/RNThread.xcodeproj/project.pbxproj",
+    "/ios/RNThread.xcodeproj/project.xcworkspace/!(xcuserdata)",
     "/js/",
     "/index.js"
   ],
