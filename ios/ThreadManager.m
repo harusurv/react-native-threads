@@ -2,13 +2,38 @@
 #include <stdlib.h>
 
 @implementation ThreadManager
+{
+  bool hasListeners;
+}
 
 @synthesize bridge = _bridge;
 
 NSMutableDictionary *threads;
 int nextThreadId = 1;
+NSString *const THREAD_TERMINATED = @"ThreadIsTerminated";
+
+- (NSArray<NSString *> *)supportedEvents
+{
+  return @[THREAD_TERMINATED];
+}
+
+-(void)startObserving {
+    hasListeners = YES;
+}
+
+-(void)stopObserving {
+    hasListeners = NO;
+}
+
+-(void) checkAndSendEvent:(NSString*)name body:(id)body
+{
+    if (hasListeners) {
+      [self sendEventWithName:name body:body];
+    }
+}
 
 RCT_EXPORT_MODULE();
+
 
 RCT_REMAP_METHOD(startThread,
                  name: (NSString *)name
@@ -42,12 +67,14 @@ RCT_EXPORT_METHOD(stopThread:(int)threadId)
 {
   if (threads == nil) {
     NSLog(@"Empty list of threads. abort stopping thread with id %i", threadId);
+    [self checkAndSendEvent:THREAD_TERMINATED body:@{@"threadId": [NSString stringWithFormat:@"%i",threadId]}];
     return;
   }
 
   RCTBridge *threadBridge = threads[[NSNumber numberWithInt:threadId]];
   if (threadBridge == nil) {
     NSLog(@"Thread is NIl. abort stopping thread with id %i", threadId);
+    [self checkAndSendEvent:THREAD_TERMINATED body:@{@"threadId": [NSString stringWithFormat:@"%i",threadId]}];
     return;
   }
 
@@ -59,12 +86,14 @@ RCT_EXPORT_METHOD(postThreadMessage: (int)threadId message:(NSString *)message)
 {
   if (threads == nil) {
     NSLog(@"Empty list of threads. abort posting to thread with id %i", threadId);
+    [self checkAndSendEvent:THREAD_TERMINATED body:@{@"threadId": [NSString stringWithFormat:@"%i",threadId]}];
     return;
   }
 
   RCTBridge *threadBridge = threads[[NSNumber numberWithInt:threadId]];
   if (threadBridge == nil) {
     NSLog(@"Thread is NIl. abort posting to thread with id %i", threadId);
+    [self checkAndSendEvent:THREAD_TERMINATED body:@{@"threadId": [NSString stringWithFormat:@"%i",threadId]}];
     return;
   }
 

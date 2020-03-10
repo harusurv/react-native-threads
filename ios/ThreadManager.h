@@ -6,8 +6,9 @@
 #import <React/RCTBridge+Private.h>
 #import <React/RCTEventDispatcher.h>
 #import <React/RCTBundleURLProvider.h>
+#import <React/RCTEventEmitter.h>
 
-@interface ThreadManager : NSObject <RCTBridgeModule>
+@interface ThreadManager : RCTEventEmitter <RCTBridgeModule>
 @end
 
 #endif

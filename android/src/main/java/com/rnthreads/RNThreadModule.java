@@ -98,6 +98,9 @@ public class RNThreadModule extends ReactContextBaseJavaModule implements Lifecy
     final JSThread thread = threads.get(threadId);
     if (thread == null) {
       Log.d(TAG, "Cannot stop thread - thread is null for id " + threadId);
+      WritableMap params = Arguments.createMap();
+      params.putString("threadId", String.valueOf(threadId));
+      sendEventToMainInstance("ThreadIsTerminated", params);
       return;
     }
 
@@ -115,10 +118,19 @@ public class RNThreadModule extends ReactContextBaseJavaModule implements Lifecy
     JSThread thread = threads.get(threadId);
     if (thread == null) {
       Log.d(TAG, "Cannot post message to thread - thread is null for id " + threadId);
+      WritableMap params = Arguments.createMap();
+      params.putString("threadId", String.valueOf(threadId));
+      sendEventToMainInstance("ThreadIsTerminated", params);
       return;
     }
 
     thread.postMessage(message);
+  }
+
+  private void sendEventToMainInstance(String eventName, WritableMap params) {
+    reactApplicationContext
+        .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+        .emit(eventName, params);
   }
 
   @Override
