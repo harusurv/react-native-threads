@@ -6,20 +6,19 @@
 RCT_EXPORT_MODULE();
 
 @synthesize bridge = _bridge;
-@synthesize parentBridge = _parentBridge;
+@synthesize workerManager = _workerManager;
 @synthesize threadId = _threadId;
 
 RCT_EXPORT_METHOD(postMessage: (NSString *)message)
 {
-  if (self.parentBridge == nil) {
-    NSLog(@"No parent bridge defined - abort sending thread message");
+  if (self.workerManager == nil) {
+    NSLog(@"No worker manager defined - abort sending thread message");
     return;
   }
 
   NSString *eventName = [NSString stringWithFormat:@"Thread%i", self.threadId];
 
-  [self.parentBridge.eventDispatcher sendAppEventWithName:eventName
-                                               body:message];
+  [self.workerManager checkAndSendEvent:eventName body:message];
 }
 
 @end

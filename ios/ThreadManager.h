@@ -9,6 +9,7 @@
 #import <React/RCTEventEmitter.h>
 
 @interface ThreadManager : RCTEventEmitter <RCTBridgeModule>
+- (void)checkAndSendEvent:(NSString *)name body:(id)body;
 @end
 
 #endif

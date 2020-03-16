@@ -14,7 +14,7 @@ NSString *const THREAD_TERMINATED = @"ThreadIsTerminated";
 
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[THREAD_TERMINATED];
+  return @[THREAD_TERMINATED, @"Thread0", @"Thread1", @"Thread2", @"Thread3", @"Thread4"];
 }
 
 -(void)startObserving {
@@ -56,7 +56,7 @@ RCT_REMAP_METHOD(startThread,
 
   ThreadSelfManager *threadSelf = [threadBridge moduleForName:@"ThreadSelfManager"];
   [threadSelf setThreadId:threadId];
-  [threadSelf setParentBridge:self.bridge];
+  [threadSelf setWorkerManager:self];
 
 
   [threads setObject:threadBridge forKey:[NSNumber numberWithInt:threadId]];
