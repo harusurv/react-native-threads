@@ -1,4 +1,5 @@
 #import "ThreadManager.h"
+#import "ThreadsDevSettings.h"
 #include <stdlib.h>
 
 @implementation ThreadManager
@@ -49,9 +50,14 @@ RCT_REMAP_METHOD(startThread,
   NSURL *threadURL = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:name fallbackResource:name];
   NSLog(@"starting Thread %@", [threadURL absoluteString]);
 
+  RCTBridgeModuleListProvider threadModuleProvider = ^NSArray<id<RCTBridgeModule>> *{
+    ThreadsDevSettings *devSettings = [[ThreadsDevSettings alloc] init];
+    return @[devSettings];
+  };
 
-   RCTBridge *threadBridge = [[RCTBridge alloc] initWithBundleURL:threadURL
-                                            moduleProvider:nil
+
+  RCTBridge *threadBridge = [[RCTBridge alloc] initWithBundleURL:threadURL
+                                            moduleProvider:threadModuleProvider
                                              launchOptions:nil];
 
   ThreadSelfManager *threadSelf = [threadBridge moduleForName:@"ThreadSelfManager"];
