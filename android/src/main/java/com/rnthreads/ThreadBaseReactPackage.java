@@ -7,7 +7,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.devsupport.JSCHeapCapture;
 import com.facebook.react.modules.appstate.AppStateModule;
 import com.facebook.react.modules.core.ExceptionsManagerModule;
-import com.facebook.react.modules.core.Timing;
+import com.facebook.react.modules.core.TimingModule;
 import com.facebook.react.modules.debug.SourceCodeModule;
 import com.facebook.react.modules.intent.IntentModule;
 import com.facebook.react.modules.network.NetworkingModule;
@@ -36,7 +36,7 @@ public class ThreadBaseReactPackage implements ReactPackage {
                 new AndroidInfoModule(catalystApplicationContext),
                 new ExceptionsManagerModule(reactInstanceManager.getDevSupportManager()),
                 new AppStateModule(catalystApplicationContext),
-                new Timing(catalystApplicationContext, reactInstanceManager.getDevSupportManager()),
+                new TimingModule(catalystApplicationContext, reactInstanceManager.getDevSupportManager()),
                 new UIManagerStubModule(catalystApplicationContext),
                 new SourceCodeModule(catalystApplicationContext),
                 new JSCHeapCapture(catalystApplicationContext),
