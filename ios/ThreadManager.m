@@ -48,7 +48,7 @@ RCT_REMAP_METHOD(startThread,
 
   int threadId = nextThreadId++;
 
-  NSURL *threadURL = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:name fallbackResource:name];
+  NSURL *threadURL = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:name];
   NSLog(@"starting Thread %@", [threadURL absoluteString]);
 
   RCTBridgeModuleListProvider threadModuleProvider = ^NSArray<id<RCTBridgeModule>> *{
