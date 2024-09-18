@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -52,6 +52,10 @@ public class RNThreadModule extends ReactContextBaseJavaModule implements Lifecy
     this.additionalThreadPackages = additionalThreadPackages;
     reactContext.addLifecycleEventListener(this);
   }
+
+  // https://github.com/ExodusMovement/template-wallet/issues/106#issuecomment-2322604973
+  @ReactMethod public void addListener(String eventName) {}
+  @ReactMethod public void removeListeners(Integer count) {}
 
   @Override
   public String getName() {
@@ -222,7 +226,13 @@ public class RNThreadModule extends ReactContextBaseJavaModule implements Lifecy
   }
 
   private void downloadScriptToFileSync(String bundleUrl, String bundleOut) {
-    OkHttpClient client = new OkHttpClient();
+
+    // Here we increase the read timeout to avoid crashes on startup
+    // when bundling from an empty metro cache:
+    OkHttpClient client = new OkHttpClient.Builder()
+            .readTimeout(60, TimeUnit.SECONDS)
+            .build();
+
     final File out = new File(bundleOut);
 
     Request request = new Request.Builder()
