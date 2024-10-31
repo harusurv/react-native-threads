@@ -1,21 +1,25 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {SafeAreaView, Text} from 'react-native';
 import {Thread} from '@exodus/react-native-threads';
 
 function App(): JSX.Element {
-  const [backgroundColor, setBackgroundColor] = React.useState<string>();
+  const [reactNativeExports, setReactNativeExports] = React.useState<
+    readonly string[]
+  >([]);
   React.useEffect(
     () =>
-      void new Promise(onmessage => {
-        Object.assign(new Thread('index.thread.js'), {
-          onmessage,
-        }).postMessage(JSON.stringify(true));
-      })
-        .then(() => setBackgroundColor('green'))
-        .catch(() => setBackgroundColor('red')),
+      void new Promise(onmessage =>
+        Object.assign(new Thread('index.thread.js'), {onmessage}).postMessage(
+          JSON.stringify({}),
+        ),
+      ).then(e => setReactNativeExports(JSON.parse(String(e)))),
     [],
   );
-  return <View style={[StyleSheet.absoluteFill, {backgroundColor}]} />;
+  return (
+    <SafeAreaView>
+      <Text children={JSON.stringify(reactNativeExports)} />
+    </SafeAreaView>
+  );
 }
 
 export default App;
