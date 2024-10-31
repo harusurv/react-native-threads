@@ -209,7 +209,7 @@ public class RNThreadModule extends ReactContextBaseJavaModule implements Lifecy
 
   private JSBundleLoader createReleaseBundleLoader(String jsFileName, String jsFileSlug) {
     Log.d(TAG, "createReleaseBundleLoader - reading file from assets");
-    return JSBundleLoader.createAssetLoader(reactApplicationContext, "assets://" + jsFileSlug + ".thread.jsbundle", false);
+    return JSBundleLoader.createAssetLoader(reactApplicationContext, "assets://" + jsFileSlug + ".jsbundle", false);
   }
 
   private ReactInstanceManager getReactInstanceManager() {
