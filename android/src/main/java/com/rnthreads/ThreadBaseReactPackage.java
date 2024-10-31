@@ -30,23 +30,7 @@ public class ThreadBaseReactPackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext catalystApplicationContext) {
-        return Arrays.<NativeModule>asList(
-                // Core list
-                new AndroidInfoModule(catalystApplicationContext),
-                new ExceptionsManagerModule(reactInstanceManager.getDevSupportManager()),
-                new AppStateModule(catalystApplicationContext),
-                new TimingModule(catalystApplicationContext, reactInstanceManager.getDevSupportManager()),
-                new UIManagerStubModule(catalystApplicationContext),
-                new SourceCodeModule(catalystApplicationContext),
-                new JSCHeapCapture(catalystApplicationContext),
-
-                // Main list
-                new IntentModule(catalystApplicationContext),
-                new NetworkingModule(catalystApplicationContext),
-                new VibrationModule(catalystApplicationContext),
-                new WebSocketModule(catalystApplicationContext),
-                new ThreadSelfModule(catalystApplicationContext)
-        );
+        return Arrays.<NativeModule>asList(new ThreadSelfModule(catalystApplicationContext));
     }
 
     @Override

@@ -77,8 +77,13 @@ public class RNThreadModule extends ReactContextBaseJavaModule implements Lifecy
             : createReleaseBundleLoader(jsFileName, jsFileSlug);
 
     try {
-      ArrayList<ReactPackage> threadPackages = new ArrayList<ReactPackage>(Arrays.asList(additionalThreadPackages));
-      threadPackages.add(0, new ThreadBaseReactPackage(getReactInstanceManager()));
+      ArrayList<ReactPackage> threadPackages = new ArrayList<ReactPackage>();
+      // react-native-threads
+      threadPackages.add(new ThreadBaseReactPackage(getReactInstanceManager()));
+      // react native runtime
+      threadPackages.addAll(getReactInstanceManager().getPackages());
+      // thread-specific native modules
+      threadPackages.addAll(Arrays.asList(additionalThreadPackages));
 
       ReactContextBuilder threadContextBuilder = new ReactContextBuilder(getReactApplicationContext())
               .setJSBundleLoader(bundleLoader)
