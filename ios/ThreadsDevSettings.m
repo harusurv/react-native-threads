@@ -13,7 +13,7 @@
 // The RCTBridge requires us to implement this property, as without doing so dependents are prone to throwing an exception on startup.
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[];
+  return @[@"didPressMenuItem"];
 }
 
 // RCTDevSettings doesn't expose requiresMainQueueSetup, so we explicitly keep it in sync.
