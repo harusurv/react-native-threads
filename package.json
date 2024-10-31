@@ -24,6 +24,7 @@
     "android/src",
     "android/build.gradle",
     "ios",
+    "!example/",
     "!**/build/**",
     "js/",
     "index.js",
