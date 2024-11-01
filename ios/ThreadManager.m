@@ -53,7 +53,6 @@ RCT_REMAP_METHOD(startThread,
     : name;
 
   // Bundled JavaScript is placed within the resources directory.
-  //NSURL *bundledThreadURL = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"%@.thread", [jsFileSlug lastPathComponent]] withExtension:@"jsbundle"];
   NSURL *bundledThreadURL = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"%@", [jsFileSlug lastPathComponent]] withExtension:@"jsbundle"];
 
   // Check whether we can read bundle JS the resources directory. If
