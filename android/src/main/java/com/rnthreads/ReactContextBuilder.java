@@ -1,4 +1,3 @@
-fix it:
 package com.rnthreads;
 
 import android.content.Context;
@@ -15,6 +14,7 @@ import com.facebook.react.bridge.JavaScriptExecutorFactory;
 import com.facebook.react.jscexecutor.JSCExecutorFactory;
 import com.facebook.react.bridge.JavaScriptExecutor;
 import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.BridgeReactContext;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.bridge.queue.ReactQueueConfigurationSpec;
 import com.facebook.react.devsupport.interfaces.DevSupportManager;
@@ -74,10 +74,10 @@ public class ReactContextBuilder {
     public ReactApplicationContext build() throws Exception {
         JavaScriptExecutor jsExecutor = getJSExecutorFactory().create();
 
-        // fresh new react context
-        final ReactApplicationContext reactContext = new ReactApplicationContext(parentContext);
+        // Choose the correct context based on the mode (assuming bridge mode here)
+        final ReactApplicationContext reactContext = new BridgeReactContext(parentContext);
         if (devSupportManager != null) {
-            reactContext.setJSExceptionHandler(devSupportManager);
+            reactContext.setNativeModuleCallExceptionHandler(devSupportManager);
         }
 
         // load native modules
@@ -93,7 +93,6 @@ public class ReactContextBuilder {
                         ? devSupportManager
                         : createNativeModuleExceptionHandler()
                 );
-
 
         final CatalystInstance catalystInstance;
         catalystInstance = catalystInstanceBuilder.build();
