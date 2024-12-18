@@ -70,13 +70,11 @@ public class ReactContextBuilder {
         }
     }
 
-    public ReactApplicationContext build() throws Exception {
+    public ReactApplicationContext build(ReactApplicationContext reactContext) throws Exception {
         JavaScriptExecutor jsExecutor = getJSExecutorFactory().create();
 
-        // fresh new react context
-        final ReactApplicationContext reactContext = new ReactApplicationContext(parentContext);
         if (devSupportManager != null) {
-            reactContext.setJSExceptionHandler(devSupportManager);
+            reactContext.setNativeModuleCallExceptionHandler(devSupportManager);
         }
 
         // load native modules
@@ -88,49 +86,16 @@ public class ReactContextBuilder {
                 .setJSExecutor(jsExecutor)
                 .setRegistry(nativeRegistryBuilder.build())
                 .setJSBundleLoader(jsBundleLoader)
-                .setJSExceptionHandler(devSupportManager != null
-                        ? devSupportManager
-                        : createNativeModuleExceptionHandler()
-                );
+                .setNativeModuleCallExceptionHandler(devSupportManager != null ? devSupportManager : createNativeModuleExceptionHandler());
 
+        final CatalystInstance catalystInstance = catalystInstanceBuilder.build();
 
-        final CatalystInstance catalystInstance;
-        catalystInstance = catalystInstanceBuilder.build();
-
-        catalystInstance.getReactQueueConfiguration().getJSQueueThread().callOnQueue(
-                new Callable<Object>() {
-                    @Override
-                    public Object call() throws Exception {
-                        try {
-                            reactContext.initializeWithInstance(catalystInstance);
-                            catalystInstance.runJSBundle();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            devSupportManager.handleException(e);
-                        }
-
-                        return null;
-                    }
-                }
-        ).get();
-
-        catalystInstance.getReactQueueConfiguration().getUIQueueThread().callOnQueue(new Callable<Object>() {
-            @Override
-            public Object call() throws Exception {
-                try {
-                    catalystInstance.initialize();
-                    reactContext.onHostResume(null);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    devSupportManager.handleException(e);
-                }
-
-                return null;
-            }
-        }).get();
+        reactContext.initializeWithInstance(catalystInstance);
+        catalystInstance.runJSBundle();
 
         return reactContext;
     }
+
 
     private JSExceptionHandler createNativeModuleExceptionHandler() {
         return new JSExceptionHandler() {
