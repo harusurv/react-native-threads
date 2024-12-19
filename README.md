@@ -28,13 +28,25 @@ file. In the `getPackages` method pass in `mReactNativeHost` to the `RNThreadPac
 constructor:
 
 ```java
-    @Override
-    protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-        new MainReactPackage(),
-        new RNThreadPackage(mReactNativeHost)  // <-- Here
-      );
+  override val reactNativeHost: ReactNativeHost by lazy {  // LAZY ITS NECESARY
+    object : DefaultReactNativeHost(this) {
+      override fun getPackages(): List<ReactPackage> {
+        val packages = PackageList(this).packages
+        // Packages that cannot be autolinked yet can be added manually here, for example:
+        packages.add(RNThreadPackage(reactNativeHost)) // Correct reference
+        return packages
+      }
+
+      override fun getJSMainModuleName(): String = "index"
+
+      override fun getUseDeveloperSupport(): Boolean = BuildConfig.DEBUG
+
+      override val isNewArchEnabled: Boolean = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED
+
+      override val isHermesEnabled: Boolean = BuildConfig.IS_HERMES_ENABLED
     }
+  }
+
 ```
 
 Also note that only the official react native modules are available from your
