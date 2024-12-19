@@ -55,6 +55,34 @@ threads, pass them into the `RNThreadPackage` constructor after the `mReactNativ
 like this:
 `new RNThreadPackage(mReactNativeHost, new ExampleNativePackage(), new SQLitePackage())`
 
+On android/app/build.gradle
+
+```java
+dependencies {
+    // ....
+    implementation project(':react-native-threads')
+
+    // ....
+
+    if (hermesEnabled.toBoolean()) {
+        implementation("com.facebook.react:hermes-android")
+    } else {
+        implementation jscFlavor
+    }
+}
+```
+
+On android/settings.gradle on top of include ':app'
+
+```
+...
+include ':react-native-threads'
+project(':react-native-threads').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-threads/android')
+include ':app'
+...
+```
+
+
 ### Manual installation
 
 #### iOS
