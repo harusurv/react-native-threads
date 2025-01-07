@@ -53,7 +53,7 @@ public class RNThreadModule extends ReactContextBaseJavaModule implements Lifecy
     reactContext.addLifecycleEventListener(this);
   }
 
-  // https://github.com/ExodusMovement/template-wallet/issues/106#issuecomment-2322604973
+  // https://github.com/harusurv/template-wallet/issues/106#issuecomment-2322604973
   @ReactMethod public void addListener(String eventName) {}
   @ReactMethod public void removeListeners(Integer count) {}
 

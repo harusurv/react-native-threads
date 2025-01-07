@@ -1,6 +1,6 @@
 rootProject.name = 'example'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':@exodus_react-native-threads'
-project(':@exodus_react-native-threads').projectDir = new File(rootProject.projectDir, '../node_modules/@exodus/react-native-threads/android')
+project(':@exodus_react-native-threads').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-threads/android')
 include ':app'
 includeBuild('../node_modules/react-native-gradle-plugin')

@@ -1,6 +1,6 @@
 import React from 'react';
 import {SafeAreaView, Text} from 'react-native';
-import {Thread} from '@exodus/react-native-threads';
+import {Thread} from 'react-native-threads';
 
 function App(): JSX.Element {
   const [reactNativeExports, setReactNativeExports] = React.useState<

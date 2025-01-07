@@ -1,6 +1,6 @@
 const disableAutoLink = {
   ios: [],
-  android: ['@exodus/react-native-threads'],
+  android: ['react-native-threads'],
 };
 
 const dependencies = [
