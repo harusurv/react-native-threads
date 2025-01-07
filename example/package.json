@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "bundle:android": "./scripts/bundle:android.sh",
-    "bundle:ios": "./scripts/bundle:ios.sh",
+    "bundle:android": "./scripts/bundle_android.sh",
+    "bundle:ios": "./scripts/bundle_ios.sh",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
@@ -14,7 +14,7 @@
   "dependencies": {
     "react": "18.2.0",
     "react-native": "0.71.11",
-    "@exodus/react-native-threads": "file:../"
+    "react-native-threads": "file:../"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

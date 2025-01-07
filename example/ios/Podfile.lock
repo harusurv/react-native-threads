@@ -390,7 +390,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - "RNThread (from `../node_modules/@exodus/react-native-threads`)"
+  - "RNThread (from `../node_modules/react-native-threads`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -466,7 +466,7 @@ EXTERNAL SOURCES:
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
   RNThread:
-    :path: "../node_modules/@exodus/react-native-threads"
+    :path: "../node_modules/react-native-threads"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
