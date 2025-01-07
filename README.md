@@ -28,13 +28,25 @@ file. In the `getPackages` method pass in `mReactNativeHost` to the `RNThreadPac
 constructor:
 
 ```java
-    @Override
-    protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-        new MainReactPackage(),
-        new RNThreadPackage(mReactNativeHost)  // <-- Here
-      );
+  override val reactNativeHost: ReactNativeHost by lazy {  // LAZY ITS NECESARY
+    object : DefaultReactNativeHost(this) {
+      override fun getPackages(): List<ReactPackage> {
+        val packages = PackageList(this).packages
+        // Packages that cannot be autolinked yet can be added manually here, for example:
+        packages.add(RNThreadPackage(reactNativeHost)) // Correct reference
+        return packages
+      }
+
+      override fun getJSMainModuleName(): String = "index"
+
+      override fun getUseDeveloperSupport(): Boolean = BuildConfig.DEBUG
+
+      override val isNewArchEnabled: Boolean = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED
+
+      override val isHermesEnabled: Boolean = BuildConfig.IS_HERMES_ENABLED
     }
+  }
+
 ```
 
 Also note that only the official react native modules are available from your
@@ -42,6 +54,34 @@ threads (vibration, fetch, etc...). To include additional native modules in your
 threads, pass them into the `RNThreadPackage` constructor after the `mReactNativeHost`
 like this:
 `new RNThreadPackage(mReactNativeHost, new ExampleNativePackage(), new SQLitePackage())`
+
+On android/app/build.gradle
+
+```java
+dependencies {
+    // ....
+    implementation project(':react-native-threads')
+
+    // ....
+
+    if (hermesEnabled.toBoolean()) {
+        implementation("com.facebook.react:hermes-android")
+    } else {
+        implementation jscFlavor
+    }
+}
+```
+
+On android/settings.gradle on top of include ':app'
+
+```
+...
+include ':react-native-threads'
+project(':react-native-threads').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-threads/android')
+include ':app'
+...
+```
+
 
 ### Manual installation
 
