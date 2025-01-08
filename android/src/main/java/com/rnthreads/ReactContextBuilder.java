@@ -73,10 +73,6 @@ public class ReactContextBuilder {
     public ReactApplicationContext build(ReactApplicationContext reactContext) throws Exception {
         JavaScriptExecutor jsExecutor = getJSExecutorFactory().create();
 
-        if (devSupportManager != null) {
-            reactContext.setNativeModuleCallExceptionHandler(devSupportManager);
-        }
-
         // load native modules
         NativeModuleRegistryBuilder nativeRegistryBuilder = new NativeModuleRegistryBuilder(reactContext, this.instanceManager);
         addNativeModules(nativeRegistryBuilder);
@@ -85,8 +81,7 @@ public class ReactContextBuilder {
                 .setReactQueueConfigurationSpec(ReactQueueConfigurationSpec.createDefault())
                 .setJSExecutor(jsExecutor)
                 .setRegistry(nativeRegistryBuilder.build())
-                .setJSBundleLoader(jsBundleLoader)
-                .setNativeModuleCallExceptionHandler(devSupportManager != null ? devSupportManager : createNativeModuleExceptionHandler());
+                .setJSBundleLoader(jsBundleLoader);
 
         final CatalystInstance catalystInstance = catalystInstanceBuilder.build();
 

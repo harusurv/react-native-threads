@@ -32,8 +32,8 @@ public class JSThread {
             Log.d("ReactNativeThreads", "Thread already has a context");
             return;
         }
-
-        reactContext = reactContextBuilder.build();
+    
+        reactContext = reactContextBuilder.build(context);
 
         ThreadSelfModule threadSelfModule = reactContext.getNativeModule(ThreadSelfModule.class);
         threadSelfModule.initialize(id, context);
