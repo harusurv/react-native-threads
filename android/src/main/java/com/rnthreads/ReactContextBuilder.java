@@ -71,24 +71,45 @@ public class ReactContextBuilder {
     }
 
     public ReactApplicationContext build(ReactApplicationContext reactContext) throws Exception {
-        JavaScriptExecutor jsExecutor = getJSExecutorFactory().create();
 
-        // load native modules
-        NativeModuleRegistryBuilder nativeRegistryBuilder = new NativeModuleRegistryBuilder(reactContext, this.instanceManager);
-        addNativeModules(nativeRegistryBuilder);
+        try{
+            Log.d(TAG, "Create javascript executor factory A");
 
-        CatalystInstanceImpl.Builder catalystInstanceBuilder = new CatalystInstanceImpl.Builder()
-                .setReactQueueConfigurationSpec(ReactQueueConfigurationSpec.createDefault())
-                .setJSExecutor(jsExecutor)
-                .setRegistry(nativeRegistryBuilder.build())
-                .setJSBundleLoader(jsBundleLoader);
+            JavaScriptExecutor jsExecutor = getJSExecutorFactory().create();
+            Log.d(TAG, "Create javascript executor factory B");
 
-        final CatalystInstance catalystInstance = catalystInstanceBuilder.build();
+            // load native modules
+            NativeModuleRegistryBuilder nativeRegistryBuilder = new NativeModuleRegistryBuilder(reactContext, this.instanceManager);
+            addNativeModules(nativeRegistryBuilder);
 
-        reactContext.initializeWithInstance(catalystInstance);
-        catalystInstance.runJSBundle();
+            Log.d(TAG, "Create javascript executor factory C");
 
-        return reactContext;
+
+            CatalystInstanceImpl.Builder catalystInstanceBuilder = new CatalystInstanceImpl.Builder()
+                    .setReactQueueConfigurationSpec(ReactQueueConfigurationSpec.createDefault())
+                    .setJSExecutor(jsExecutor)
+                    .setRegistry(nativeRegistryBuilder.build())
+                    .setJSBundleLoader(jsBundleLoader);
+
+
+            Log.d(TAG, "Create javascript executor factory D");
+
+            final CatalystInstance catalystInstance = catalystInstanceBuilder.build();
+            Log.d(TAG, "Create javascript executor factory E");
+
+            reactContext.initializeWithInstance(catalystInstance);
+            Log.d(TAG, "Create javascript executor factory F");
+
+            catalystInstance.runJSBundle();
+            Log.d(TAG, "Create javascript executor factory G");
+
+            return reactContext;
+        }
+        catch (Exception e) {
+            Log.e(TAG, "Error building React context A: ");
+            throw e; // Re-throw to handle it further up if necessary
+        }
+        
     }
 
 
