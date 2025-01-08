@@ -2,6 +2,7 @@ package com.rnthreads;
 
 import android.content.Context;
 import android.net.Uri;
+import android.util.Log;
 
 import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
 import com.facebook.react.NativeModuleRegistryBuilder;
@@ -25,6 +26,7 @@ import java.util.concurrent.Callable;
 import static com.facebook.react.modules.systeminfo.AndroidInfoHelpers.getFriendlyDeviceName;
 
 public class ReactContextBuilder {
+    private String TAG = "ReactContextBuilder";
 
     private Context parentContext;
     private JSBundleLoader jsBundleLoader;
