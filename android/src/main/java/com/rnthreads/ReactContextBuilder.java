@@ -86,17 +86,40 @@ public class ReactContextBuilder {
 
             Log.d(TAG, "Create javascript executor factory C");
 
+            // Logging to check if jsExecutor is null
+            if (jsExecutor == null) {
+                Log.d(TAG, "jsExecutor is null");
+            } else {
+                Log.d(TAG, "jsExecutor is not null");
+            }
 
+            // Check ReactQueueConfigurationSpec
+            ReactQueueConfigurationSpec configSpec = ReactQueueConfigurationSpec.createDefault();
+            if (configSpec == null) {
+                Log.d(TAG, "ReactQueueConfigurationSpec is null");
+            } else {
+                Log.d(TAG, "ReactQueueConfigurationSpec is not null");
+            }
+
+            // Check if nativeRegistry is null
+            NativeModuleRegistry nativeRegistry = nativeRegistryBuilder.build();
+            if (nativeRegistry == null) {
+                Log.d(TAG, "nativeRegistry is null");
+            } else {
+                Log.d(TAG, "nativeRegistry is not null");
+            }
+
+            // Check if jsBundleLoader is null
+            if (jsBundleLoader == null) {
+                Log.d(TAG, "jsBundleLoader is null");
+            } else {
+                Log.d(TAG, "jsBundleLoader is not null");
+            }
             CatalystInstanceImpl.Builder catalystInstanceBuilder = new CatalystInstanceImpl.Builder()
                     .setReactQueueConfigurationSpec(ReactQueueConfigurationSpec.createDefault())
                     .setJSExecutor(jsExecutor)
                     .setRegistry(nativeRegistryBuilder.build())
                     .setJSBundleLoader(jsBundleLoader);
-
-            Log.d(TAG, jsExecutor);
-            Log.d(TAG, ReactQueueConfigurationSpec.createDefault());
-            Log.d(TAG, nativeRegistryBuilder.build());
-            Log.d(TAG, jsBundleLoader);
 
             Log.d(TAG, "Create javascript executor factory D");
 
