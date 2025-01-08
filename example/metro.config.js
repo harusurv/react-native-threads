@@ -1,11 +1,14 @@
+const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
+const path = require('path')
 /**
- * Metro configuration for React Native
- * https://github.com/facebook/react-native
+ * Metro configuration
+ * https://metrobundler.dev/docs/configuration
  *
- * @format
+ * @type {import('metro-config').MetroConfig}
  */
+const defaultConfig = getDefaultConfig(__dirname);
 
-module.exports = {
+const config = {
   transformer: {
     getTransformOptions: async () => ({
       transform: {
@@ -14,4 +17,9 @@ module.exports = {
       },
     }),
   },
+  watchFolders: [
+    path.resolve(__dirname, 'node_modules'), // Ensure it watches `node_modules`
+  ],
 };
+
+module.exports = mergeConfig(defaultConfig, config);

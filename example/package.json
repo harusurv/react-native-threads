@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "bundle:android": "./scripts/bundle:android.sh",
-    "bundle:ios": "./scripts/bundle:ios.sh",
+    "bundle:android": "./scripts/bundle_android.sh",
+    "bundle:ios": "./scripts/bundle_ios.sh",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
@@ -12,15 +12,19 @@
     "test": "jest"
   },
   "dependencies": {
+    "babel-plugin-module-resolver": "^5.0.2",
+    "expo": "^51.0.24",
     "react": "18.2.0",
-    "react-native": "0.71.11",
+    "react-native": "0.74.6",
     "react-native-threads": "file:../"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@babel/plugin-transform-private-methods": "^7.26.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
     "@react-native-community/eslint-config": "^3.2.0",
+    "@react-native/metro-config": "^0.76.5",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^29.2.1",
     "@types/react": "^18.0.24",

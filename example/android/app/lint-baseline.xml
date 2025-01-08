@@ -1,0 +1,3263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.2.1" type="baseline" client="gradle" dependencies="false" name="AGP (8.2.1)" variant="all" version="8.2.1">
+
+    <issue
+        id="DataExtractionRules"
+        message="The attribute `android:allowBackup` is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute `android:dataExtractionRules` specifying an `@xml` resource which configures cloud backups and device transfers on Android 12 and higher."
+        errorLine1="      android:allowBackup=&quot;false&quot;"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="13"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.integer.react_native_dev_server_port` appears to be unused">
+        <location
+            file="build.gradle"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.node_modules_reactnavigation_elements_src_assets_backicon` appears to be unused">
+        <location
+            file="src/main/res/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.node_modules_reactnavigation_elements_src_assets_backiconmask` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_backgrounds_bubblebackground` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_backgrounds_bubblebackground.jpg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_backgrounds_darkbluetogreen` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_backgrounds_darkbluetogreen.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_backgrounds_darkthemebackground` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_backgrounds_darkthemebackground.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_backgrounds_greentoblue` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_backgrounds_greentoblue.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_backgrounds_lightthemebackground` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_backgrounds_lightthemebackground.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_backgrounds_noisebackgroundblue` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_backgrounds_noisebackgroundblue.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_activity` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_activity.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_adduser` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_adduser.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_algo` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_algo.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_arrowdown` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_arrowdown.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_arrowleft` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_arrowleft.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_arrowright` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_arrowright.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_arrowright` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_arrowright.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_arrowup` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_arrowup.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_avax` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_avax.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_back` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_back.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_backup` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_backup.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_belloff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_belloff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_bellon` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_bellon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_bellstroke` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_bellstroke.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_box` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_box.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_bsc` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_bsc.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_bsccircular` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_bsccircular.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_burger` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_burger.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_buyplussell` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_buyplussell.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_buysell` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_buysell.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_call` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_call.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_chain` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_chain.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_chainnoborder` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_chainnoborder.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_apt` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_apt.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_arb` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_arb.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_avax` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_avax.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_base` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_base.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_bsc` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_bsc.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_btc` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_btc.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_cro` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_cro.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_doge` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_doge.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_dot` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_dot.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_eth` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_eth.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_fio` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_fio.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_grs` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_grs.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_kcc` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_kcc.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_ksm` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_ksm.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_ltc` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_ltc.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_matic` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_matic.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_okc` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_okc.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_one` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_one.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_op` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_op.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_sol` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_sol.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_vet` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_vet.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_xdc` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_xdc.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_xlm` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_xlm.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_xrp` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_xrp.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_chains_xtz` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_chains_xtz.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_changestyle` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_changestyle.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_chart` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_chart.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_check` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_check.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_check2` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_check2.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_close` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_close.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_amp` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_amp.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_audio` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_audio.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_avax` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_avax.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_band` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_band.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_bnb` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_bnb.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_btc` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_btc.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_dot` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_dot.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_eth` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_eth.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_gmx` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_gmx.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_shard` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_shard.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_sol` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_sol.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_usdc` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_usdc.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_usdt` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_usdt.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_coins_xlm` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_coins_xlm.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_collapse` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_collapse.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_combinedshape` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_combinedshape.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_contact` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_contact.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_cookies` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_cookies.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_copyoff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_copyoff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_copyon` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_copyon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_country` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_country.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_creditcard` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_creditcard.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_crown` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_crown.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_crypto` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_crypto.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_cryptodomains_ens` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_cryptodomains_ens.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_cryptodomains_unstoppabledomains` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_cryptodomains_unstoppabledomains.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_currencies_245jersey` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_currencies_245jersey.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_currencies_euro` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_currencies_euro.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_currencies_pound` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_currencies_pound.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_currency_bitcoin` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_currency_bitcoin.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_currency_eth` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_currency_eth.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_currency_matic` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_currency_matic.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_currency_shard` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_currency_shard.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_currency_soloff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_currency_soloff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_currency_solon` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_currency_solon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_dapps_uniswap` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_dapps_uniswap.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_date` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_date.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_delegate` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_delegate.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_design` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_design.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_device` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_device.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_diagonal` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_diagonal.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_diagonalblue` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_diagonalblue.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_dot` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_dot.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_down` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_down.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_draw` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_draw.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_drop` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_drop.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_edit` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_edit.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_empty_emptyassets` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_empty_emptyassets.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_empty_emptybuysell` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_empty_emptybuysell.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_empty_emptychain` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_empty_emptychain.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_empty_emptycontacts` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_empty_emptycontacts.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_empty_emptyhistory` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_empty_emptyhistory.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_empty_emptynft` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_empty_emptynft.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_empty_emptynftround` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_empty_emptynftround.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_empty_emptynotification` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_empty_emptynotification.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_empty_emptysearch` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_empty_emptysearch.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_empty_emptyswaps` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_empty_emptyswaps.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_errorbadge` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_errorbadge.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_eth` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_eth.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_expand` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_expand.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_export` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_export.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_eyeoff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_eyeoff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_eyeon` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_eyeon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_faceidandroid` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_faceidandroid.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_faceidios` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_faceidios.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_fee` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_fee.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_fiat` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_fiat.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_fidaoutlined` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_fidaoutlined.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_file` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_file.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_fileaccess` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_fileaccess.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_filter` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_filter.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_finger` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_finger.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_flashoff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_flashoff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_flashon` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_flashon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_floating` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_floating.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_galleryadd` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_galleryadd.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_galleryusual` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_galleryusual.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_game` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_game.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_germany` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_germany.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_giftoff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_giftoff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_gifton` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_gifton.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_gmxoutlinedwhite` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_gmxoutlinedwhite.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_half` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_half.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_hard` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_hard.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_hardware` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_hardware.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_harmonyoutlined` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_harmonyoutlined.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_hd` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_hd.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_heart` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_heart.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_history` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_history.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_home` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_home.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_book` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_book.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_brush` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_brush.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_community` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_community.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_contactus` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_contactus.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_flipphone` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_flipphone.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_hexagon` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_hexagon.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_like` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_like.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_moon` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_moon.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_setting5` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_setting5.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_shieldtick` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_shieldtick.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_sun` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_sun.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_icon_set_support` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_icon_set_support.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_id` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_id.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_infofilled` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_infofilled.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_infooutline` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_infooutline.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_information` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_information.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_italy` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_italy.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_key` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_key.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_keypad` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_keypad.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_layout1` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_layout1.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_layout2` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_layout2.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_left` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_left.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_likefilloff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_likefilloff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_likefillon` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_likefillon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_likestrokeoff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_likestrokeoff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_likestrokeon` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_likestrokeon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_location` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_location.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_lock` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_lock.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_logo` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_logo.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_logos_binance` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_logos_binance.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_logos_coinbase` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_logos_coinbase.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_logowhite` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_logowhite.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_max` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_max.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_mcap` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_mcap.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_menu` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_menu.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_assets` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_assets.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_buy_sell` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_buy_sell.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_contacts` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_contacts.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_dex_swap` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_dex_swap.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_market_stats` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_market_stats.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_news` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_news.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_nfts` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_nfts.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_referral` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_referral.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_settings` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_settings.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_staking` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_staking.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_support` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_support.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_trade` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_trade.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_transactions` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_transactions.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_walletconnect` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_walletconnect.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_wallets` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_wallets.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_menu_web3_browser` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_menu_web3_browser.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_min` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_min.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_mock_mocknotification` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_mock_mocknotification.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_mock_mockplus` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_mock_mockplus.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_mock_mocksettings` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_mock_mocksettings.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_mock_newupdate` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_mock_newupdate.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_morehorizontal` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_morehorizontal.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_morevertical` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_morevertical.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_nft` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_nft.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_nftmonkey` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_nftmonkey.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_nftoff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_nftoff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_nfton` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_nfton.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_nfttabbar` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_nfttabbar.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_off` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_off.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_on` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_on.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_optimismoutlined` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_optimismoutlined.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_paymentmethods_bank` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_paymentmethods_bank.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_paymentmethods_card` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_paymentmethods_card.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_people` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_people.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_photo` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_photo.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_plus` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_plus.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_polygon` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_polygon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_polygonoutlined` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_polygonoutlined.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_question` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_question.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_radioagree` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_radioagree.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_radioagreenogradient` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_radioagreenogradient.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_radioagreewithborder` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_radioagreewithborder.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_radiooff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_radiooff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_radioon` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_radioon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_receive` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_receive.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_receive2` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_receive2.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_refresh` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_refresh.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_refresh_left` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_refresh_left.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_right` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_right.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_save` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_save.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_scan` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_scan.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_search` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_search.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_secure` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_secure.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_securecheck` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_securecheck.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_send` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_send.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_send2` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_send2.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_settings` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_settings.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_settings2` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_settings2.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_share1` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_share1.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_shieldcheck` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_shieldcheck.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_shuffle` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_shuffle.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_social` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_social.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_social_apple` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_social_apple.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_social_discord` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_social_discord.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_social_facebook` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_social_facebook.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_social_google` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_social_google.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_social_googlemono` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_social_googlemono.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_social_instagram` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_social_instagram.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_social_reddit` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_social_reddit.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_social_twitter` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_social_twitter.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_icons_social_youtube` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_icons_social_youtube.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_sol` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_sol.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_solidarrowdown` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_solidarrowdown.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_solidsrrowleft` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_solidsrrowleft.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_solidsrrowright` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_solidsrrowright.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_solidsrrowup` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_solidsrrowup.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_sound` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_sound.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_spain` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_spain.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_stake` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_stake.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_starempty` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_starempty.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_starfilled` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_starfilled.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_staroff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_staroff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_staron` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_staron.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_stats` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_stats.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_status` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_status.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_stockdown` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_stockdown.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_stockup` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_stockup.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_supply` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_supply.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_swap` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_swap.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tabbarcenter` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tabbarcenter.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tag` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tag.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_time` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_time.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_aave` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_aave.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_amp` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_amp.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_apecoin` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_apecoin.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_audio` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_audio.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_avax` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_avax.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_axie` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_axie.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_band` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_band.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_bat` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_bat.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_binance` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_binance.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_btc` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_btc.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_btcshadow` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_btcshadow.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_btcshadow2` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_btcshadow2.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_chainlink` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_chainlink.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_compound` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_compound.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_dai` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_dai.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_decentraland` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_decentraland.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_dogecoin` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_dogecoin.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_ethereum` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_ethereum.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_fida` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_fida.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_fio` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_fio.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_gmx` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_gmx.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_gmxbordered` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_gmxbordered.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_harmony` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_harmony.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_inch` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_inch.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_lidodao` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_lidodao.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_litecoin` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_litecoin.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_okx` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_okx.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_optimism` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_optimism.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_orca` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_orca.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_pancakeswap` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_pancakeswap.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_poland` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_poland.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_polkadot` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_polkadot.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_polygon` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_polygon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_rsr` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_rsr.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_sandbox` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_sandbox.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_senttoself` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_senttoself.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_shard` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_shard.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_shardfailed` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_shardfailed.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_solana` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_solana.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_steth` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_steth.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_tether` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_tether.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_tezos` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_tezos.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_thegraph` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_thegraph.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_ukraine` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_ukraine.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_unitedstates` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_unitedstates.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_unitedstatesbordered` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_unitedstatesbordered.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_usdc` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_usdc.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_venus` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_venus.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tokens_yfi` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tokens_yfi.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tools` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tools.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_touchidandroid` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_touchidandroid.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_touchidios` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_touchidios.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_trade` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_trade.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_tradeupdown` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_tradeupdown.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_transactionwallet` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_transactionwallet.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_trash` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_trash.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_trx` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_trx.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_turkey` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_turkey.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_ukraine` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_ukraine.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_undelegate` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_undelegate.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_uniswap` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_uniswap.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_unsecure` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_unsecure.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_unstake` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_unstake.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_up` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_up.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_update` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_update.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_usa` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_usa.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_user` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_user.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_verified` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_verified.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_vibration` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_vibration.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_visa` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_visa.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_walletadd` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_walletadd.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_walletcircle` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_walletcircle.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_walletconnect` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_walletconnect.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_walletimport` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_walletimport.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_walletmain` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_walletmain.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_walletregular` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_walletregular.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_wallettimer` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_wallettimer.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_warnbadge` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_warnbadge.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_warninigfilled` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_warninigfilled.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_warninigoutline` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_warninigoutline.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_web3` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_web3.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_wifioff` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_wifioff.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_icons_wifion` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_icons_wifion.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_appearance_appearance1` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_appearance_appearance1.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_appearance_appearance2` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_appearance_appearance2.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_appearance_appearance3` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_appearance_appearance3.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_appearance_appearance4` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_appearance_appearance4.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_appearance_appearance5` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_appearance_appearance5.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_buysell_banktransfer` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_buysell_banktransfer.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_buysell_creditcard` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_buysell_creditcard.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_buysell_googlepay` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_buysell_googlepay.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_bank` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_bank.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_emojifine` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_emojifine.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_emojigreat` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_emojigreat.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_emojinotgood` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_emojinotgood.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_emojiperfect` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_emojiperfect.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_emojiterrible` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_emojiterrible.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_error` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_error.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_images_common_hexagonassetoutline` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_images_common_hexagonassetoutline.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_images_common_hexagonbackgroundfill` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_images_common_hexagonbackgroundfill.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_nowallet` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_nowallet.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_offline` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_offline.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_privatekey` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_privatekey.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_receive` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_receive.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_success` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_success.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_trade` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_trade.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_common_warning` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_common_warning.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_images_contact_newcontactempty` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_images_contact_newcontactempty.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_fee_averagefee` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_fee_averagefee.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_fee_customfee` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_fee_customfee.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_fee_highfee` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_fee_highfee.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_fee_lowfee` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_fee_lowfee.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_menu_usersam` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_menu_usersam.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_mocks_userbackground` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_mocks_userbackground.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_nft_nft1` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_nft_nft1.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_nft_nft2` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_nft_nft2.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_nft_nft3` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_nft_nft3.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_nft_nft4` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_nft_nft4.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_nft_nft5` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_nft_nft5.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_nft_nftmonkey` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_nft_nftmonkey.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_notification_allownotifications` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_notification_allownotifications.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_addwallet` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_addwallet.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_buysellcrypto` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_buysellcrypto.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_buysellcryptocoins` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_buysellcryptocoins.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_collectnft` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_collectnft.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_exchangecrypto` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_exchangecrypto.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_holdearncrypto` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_holdearncrypto.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_holdearncryptocoins` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_holdearncryptocoins.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_managecrypto` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_managecrypto.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_managecryptocoins` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_managecryptocoins.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_selfcustody` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_selfcustody.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_selfcustodycoins` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_selfcustodycoins.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_sendcrypto` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_sendcrypto.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_web3defi` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_web3defi.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_onboarding_web3deficoins` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_onboarding_web3deficoins.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_openwallet_fingerprint` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_openwallet_fingerprint.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_images_openwallet_forgotunlock` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_images_openwallet_forgotunlock.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_openwallet_goldendiscconnect` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_openwallet_goldendiscconnect.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_openwallet_u2fphone` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_openwallet_u2fphone.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_openwallet_user` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_openwallet_user.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_images_openwallet_walletlock` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_images_openwallet_walletlock.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_receiveassets_activatexrp` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_receiveassets_activatexrp.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_receiveassets_assetqr` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_receiveassets_assetqr.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_scan_nofileaccess` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_scan_nofileaccess.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_sendassets_btcsuccess` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_sendassets_btcsuccess.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_addcrypto` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_addcrypto.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_addledger` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_addledger.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_addtrezor` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_addtrezor.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_backupillustration` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_backupillustration.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_cameraaccess` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_cameraaccess.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_connectledger` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_connectledger.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_connecttenzor` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_connecttenzor.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_controlkeys` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_controlkeys.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_desktopbig` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_desktopbig.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_device` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_device.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_enableassets` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_enableassets.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_hardware` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_hardware.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_ledgerdetected` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_ledgerdetected.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_lockincircle` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_lockincircle.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_mobile` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_mobile.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_mobilebig` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_mobilebig.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_nevershare` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_nevershare.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_newseed` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_newseed.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_noncustodial` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_noncustodial.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_pairingtrezor` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_pairingtrezor.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_recoveryseed` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_recoveryseed.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_referralcode` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_referralcode.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_securecheck` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_securecheck.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_seedphrase` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_seedphrase.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_social` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_social.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_sync` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_sync.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_trezordetected` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_trezordetected.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_twelvewords` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_twelvewords.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_twentyfourwords` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_twentyfourwords.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_start_welcome` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_start_welcome.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_transactionhistory_nftimage` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_transactionhistory_nftimage.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_transactionhistory_support` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_transactionhistory_support.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.src_assets_images_transactionhistory_swapboxrectanglearrow` appears to be unused">
+        <location
+            file="src/main/res/raw/src_assets_images_transactionhistory_swapboxrectanglearrow.svg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_wallet_rescantransaction` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_wallet_rescantransaction.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_web3_card1` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_web3_card1.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_web3_game` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_web3_game.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.src_assets_images_web3_web3card` appears to be unused">
+        <location
+            file="src/main/res/drawable-mdpi/src_assets_images_web3_web3card.png"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-hdpi`: node_modules_reactnavigation_elements_src_assets_backiconmask.png, src_assets_backgrounds_bubblebackground.jpg, src_assets_backgrounds_darkbluetogreen.png, src_assets_backgrounds_darkthemebackground.png, src_assets_backgrounds_greentoblue.png... (363 more)">
+        <location
+            file="src/main/res/drawable-hdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-xhdpi`: node_modules_reactnavigation_elements_src_assets_backiconmask.png, src_assets_backgrounds_bubblebackground.jpg, src_assets_backgrounds_darkbluetogreen.png, src_assets_backgrounds_darkthemebackground.png, src_assets_backgrounds_greentoblue.png... (363 more)">
+        <location
+            file="src/main/res/drawable-xhdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-xxhdpi`: node_modules_reactnavigation_elements_src_assets_backiconmask.png, src_assets_backgrounds_bubblebackground.jpg, src_assets_backgrounds_darkbluetogreen.png, src_assets_backgrounds_darkthemebackground.png, src_assets_backgrounds_greentoblue.png... (363 more)">
+        <location
+            file="src/main/res/drawable-xxhdpi"/>
+    </issue>
+
+</issues>

@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.author         = package['author']
     s.homepage       = "https://github.com/harusurv/react-native-threads.git"
     s.platforms      = { :ios => "11.0" }
-    s.source         = { :git => "https://github.com/harusurv/react-native-threads.git", :tag => "#{s.version}" }
+    s.source         = { :git => "https://github.com/ExodusMovement/react-native-threads.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm}"
 
