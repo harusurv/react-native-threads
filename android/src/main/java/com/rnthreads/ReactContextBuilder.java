@@ -120,14 +120,8 @@ public class ReactContextBuilder {
                     .setReactQueueConfigurationSpec(configSpec)
                     .setJSExecutor(jsExecutor)
                     .setRegistry(nativeRegistry)
-                    .setJSBundleLoader(jsBundleLoader);
-                    .setNativeModuleCallExceptionHandler(new NativeModuleCallExceptionHandler() {
-                        @Override
-                        public void handleException(Exception e) {
-                            // Handle the exception as needed
-                            throw new RuntimeException(e);
-                        }
-                    });
+                    .setJSBundleLoader(jsBundleLoader)
+                    .setNativeModuleCallExceptionHandler(this.createNativeModuleExceptionHandler());
             Log.d(TAG, "Create javascript executor factory D");
 
             final CatalystInstance catalystInstance = catalystInstanceBuilder.build();
@@ -149,8 +143,8 @@ public class ReactContextBuilder {
     }
 
 
-    private JSExceptionHandler createNativeModuleExceptionHandler() {
-        return new JSExceptionHandler() {
+    private NativeModuleCallExceptionHandler createNativeModuleExceptionHandler() {
+        return new NativeModuleCallExceptionHandler() {
             @Override
             public void handleException(Exception e) {
                 throw new RuntimeException(e);
