@@ -93,6 +93,10 @@ public class ReactContextBuilder {
                     .setRegistry(nativeRegistryBuilder.build())
                     .setJSBundleLoader(jsBundleLoader);
 
+            Log.d(TAG, jsExecutor);
+            Log.d(TAG, ReactQueueConfigurationSpec.createDefault());
+            Log.d(TAG, nativeRegistryBuilder.build());
+            Log.d(TAG, jsBundleLoader);
 
             Log.d(TAG, "Create javascript executor factory D");
 
