@@ -20,7 +20,7 @@ import com.facebook.react.bridge.queue.ReactQueueConfigurationSpec;
 import com.facebook.react.devsupport.interfaces.DevSupportManager;
 import com.facebook.soloader.SoLoader;
 import com.facebook.react.bridge.NativeModuleRegistry;
-
+import com.facebook.react.bridge.NativeModuleCallExceptionHandler;
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 
@@ -117,11 +117,17 @@ public class ReactContextBuilder {
                 Log.d(TAG, "jsBundleLoader is not null");
             }
             CatalystInstanceImpl.Builder catalystInstanceBuilder = new CatalystInstanceImpl.Builder()
-                    .setReactQueueConfigurationSpec(ReactQueueConfigurationSpec.createDefault())
+                    .setReactQueueConfigurationSpec(configSpec)
                     .setJSExecutor(jsExecutor)
-                    .setRegistry(nativeRegistryBuilder.build())
+                    .setRegistry(nativeRegistry)
                     .setJSBundleLoader(jsBundleLoader);
-
+                    .setNativeModuleCallExceptionHandler(new NativeModuleCallExceptionHandler() {
+                        @Override
+                        public void handleException(Exception e) {
+                            // Handle the exception as needed
+                            throw new RuntimeException(e);
+                        }
+                    });
             Log.d(TAG, "Create javascript executor factory D");
 
             final CatalystInstance catalystInstance = catalystInstanceBuilder.build();
