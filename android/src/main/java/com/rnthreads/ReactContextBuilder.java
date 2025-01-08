@@ -20,7 +20,6 @@ import com.facebook.react.bridge.queue.ReactQueueConfigurationSpec;
 import com.facebook.react.devsupport.interfaces.DevSupportManager;
 import com.facebook.soloader.SoLoader;
 import com.facebook.react.bridge.NativeModuleRegistry;
-import com.facebook.react.bridge.NativeModuleCallExceptionHandler;
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 
@@ -121,7 +120,7 @@ public class ReactContextBuilder {
                     .setJSExecutor(jsExecutor)
                     .setRegistry(nativeRegistry)
                     .setJSBundleLoader(jsBundleLoader)
-                    .setNativeModuleCallExceptionHandler(this.createNativeModuleExceptionHandler());
+                    .setNativeModuleCallExceptionHandler(createNativeModuleExceptionHandler());
             Log.d(TAG, "Create javascript executor factory D");
 
             final CatalystInstance catalystInstance = catalystInstanceBuilder.build();
@@ -143,8 +142,8 @@ public class ReactContextBuilder {
     }
 
 
-    private NativeModuleCallExceptionHandler createNativeModuleExceptionHandler() {
-        return new NativeModuleCallExceptionHandler() {
+    private JSExceptionHandler createNativeModuleExceptionHandler() {
+        return new JSExceptionHandler() {
             @Override
             public void handleException(Exception e) {
                 throw new RuntimeException(e);
