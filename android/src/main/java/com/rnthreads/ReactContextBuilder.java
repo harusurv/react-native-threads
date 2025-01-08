@@ -19,6 +19,7 @@ import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.bridge.queue.ReactQueueConfigurationSpec;
 import com.facebook.react.devsupport.interfaces.DevSupportManager;
 import com.facebook.soloader.SoLoader;
+import com.facebook.react.bridge.NativeModuleRegistry;
 
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
